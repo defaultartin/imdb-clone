@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>IMDb</title>
+		<link href="styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bookmark_add,search" />
+	</head>
+
+	<body>
+		<header>
+			<div class="navbar">
+				<div class="logo">IMDb</div>
+
+				<button class="menu-btn">
+					<span class="hamburger">☰</span> Menu
+				</button>
+
+				<div class="search-container">
+					<button class="search-category-btn">All <span class="arrow">▼</span></button>
+					<input type="text" placeholder="Search IMDb" />
+					<button class="search-btn"><i class="material-symbols-outlined" style="font-size: 21px;">search</i></button>
+				</div>
+
+				<div class="pro-btn"><span class="pro-white">IMDb</span><span class="pro-blue">Pro</span></div>
+				<div class="divider"></div>
+				<a href="#" class="watchlist-btn"><i class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20; font-size: 20px;">bookmark_add</i> Watchlist</a>
+				<a href="#" class="signin-btn">Sign In</a>
+				<button class="lang-btn">EN ▼</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero-section">
+				<div class="hero-container">
+
+					<div class="hero-main">
+						<div class="trailer-card">
+							<img class="backdrop" src="https://variety.com/wp-content/uploads/2026/07/doom.jpg" alt="Featured Movie" />
+							<div class="gradient-overlay"></div>
+
+							<button class="slider-arrow left">❮</button>
+							<button class="slider-arrow right">❯</button>
+
+							<div class="trailer-info">
+								<img class="poster" src="https://m.media-amazon.com/images/M/MV5BNGEwYWZkN2UtOTQ5Mi00MGQzLWEzNjYtMWMyNDBkMTkzMWNkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Poster" />
+								<div class="play-details">
+									<button class="play-btn">
+										<span class="play-icon">▶</span>
+									</button>
+									<div class="text-content">
+										<h2 class="trailer-title">Get a Special Look at 'Avengers: Doomsday'</h2>
+										<p class="trailer-subtitle">Watch the D23 Exclusive</p>
+									</div>
+									<span class="duration">2:09</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<aside class="hero-sidebar">
+						<h3 class="sidebar-title">Up next</h3>
+						<div class="up-next-list">
+
+							<div class="up-next-item active">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXHBq3aLRG81QccN0w6NSvaawTGqwbOEcHJqD1uXDqUaD43zV7UaQ6HvF&s=10" alt="Thumbnail" />
+								<div class="item-info">
+									<span class="play-icon-small">▶</span>
+									<span class="runtime">2:04</span>
+									<p class="item-title">VisionQuest</p>
+									<p class="item-desc">Watch the Trailer</p>
+								</div>
+							</div>
+
+							<div class="up-next-item">
+								<img src="https://picsum.photos/id/1069/120/70" alt="Thumbnail" />
+								<div class="item-info">
+									<span class="play-icon-small">▶</span>
+									<span class="runtime">1:45</span>
+									<p class="item-title">Godzilla x Kong</p>
+									<p class="item-desc">The New Empire Trailer</p>
+								</div>
+							</div>
+
+							<div class="up-next-item">
+								<img src="https://picsum.photos/id/1084/120/70" alt="Thumbnail" />
+								<div class="item-info">
+									<span class="play-icon-small">▶</span>
+									<span class="runtime">2:30</span>
+									<p class="item-title">Kingdom of the Planet of the Apes</p>
+									<p class="item-desc">Teaser Trailer</p>
+								</div>
+							</div>
+
+						</div>
+						<a href="#" class="browse-trailers">Browse trailers ❯</a>
+					</aside>
+
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

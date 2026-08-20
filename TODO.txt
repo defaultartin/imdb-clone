@@ -1,0 +1,4 @@
+[ ] Make the Navbar Mobile Responsive
+[ ] The 'Trailer Play Button' turns into an Ellipse when used on Mobile
+[ ] Find a proper image for the next 2 items on the 'Up Next' Section
+[ ] Add Javascript to the Sliders
