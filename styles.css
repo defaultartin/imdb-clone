@@ -359,14 +359,25 @@ hr {
 @media (max-width: 600px) {
 	.poster { width: 5.5rem; }
 	.slider-arrow { display: none; }
-	.trailer-title { font-size: 1.2rem; font-weight: bold; }
-	.play-btn { width: 3rem; height: 3rem; scale: 0.7; }
+	.trailer-title { font-size: 1rem; font-weight: bold; }
 	.duration { font-size: 0.9rem; }
+
+	.trailer-info { bottom: -0.05rem; }
+
+	.play-btn {
+		position: relative;
+		left: -0.3rem;
+		top: 0.8rem;
+	}
+	.play-btn .material-symbols-outlined {
+		font-size: 3.6rem !important;
+	}
 
 	.play-details {
 		align-items: start;
 		justify-content: start;
 		flex-direction: column;
+		transform: translate(-0.5rem, 1.7rem);
 	}
 
 	.pills-container {
