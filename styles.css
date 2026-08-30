@@ -18,6 +18,12 @@ header {
 	width: 100%;
 }
 
+hr {
+	max-width: 1280px;
+	margin: 1rem auto;
+	color: #333333;
+}
+
 .mobile-navbar,
 .navbar {
 	max-width: 1280px;
@@ -322,6 +328,22 @@ header {
 	margin-top: 0.6rem;
 }
 .browse-trailers:hover { color: #f5c518; }
+
+.pills-container {
+	max-width: 1280px;
+	display: flex;
+	gap: 1rem;
+	margin: 1rem auto;
+}
+.pills {
+	border: 2px solid #333333;
+	border-radius: 10rem;
+	color: white;
+	font-size: 0.85rem;
+	padding: 0.35rem 0.9rem;
+	cursor: pointer;
+}
+.pills:hover {background-color: #111111;}
 
 @media (max-width: 1024px) {
 	.hero-container {
