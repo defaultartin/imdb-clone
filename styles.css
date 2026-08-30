@@ -5,9 +5,11 @@
 	box-sizing: border-box;
 }
 
+html,
 body {
 	background-color: black;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 /**********/
@@ -173,7 +175,6 @@ hr {
 }
 .hero-main:hover {
 	.play-btn {
-		border-color: #f5c518;
 		color: #f5c518;
 	}
 }
@@ -330,7 +331,7 @@ hr {
 .browse-trailers:hover { color: #f5c518; }
 
 .pills-container {
-	max-width: 1280px;
+	width: 1280px;
 	display: flex;
 	gap: 1rem;
 	margin: 1rem auto;
@@ -343,7 +344,7 @@ hr {
 	padding: 0.35rem 0.9rem;
 	cursor: pointer;
 }
-.pills:hover {background-color: #111111;}
+.pills:hover { background-color: #111111; }
 
 @media (max-width: 1024px) {
 	.hero-container {
@@ -358,6 +359,25 @@ hr {
 @media (max-width: 600px) {
 	.poster { width: 5.5rem; }
 	.slider-arrow { display: none; }
-	.trailer-title { font-size: 1.125rem; }
-	.play-btn { width: 3rem; height: 3rem; font-size: 1.125rem; }
+	.trailer-title { font-size: 1.2rem; font-weight: bold; }
+	.play-btn { width: 3rem; height: 3rem; scale: 0.7; }
+	.duration { font-size: 0.9rem; }
+
+	.play-details {
+		align-items: start;
+		justify-content: start;
+		flex-direction: column;
+	}
+
+	.pills-container {
+		max-width: 100%;
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		scrollbar-width: none;
+		gap: 0.7rem;
+		margin: 1rem 1rem;
+	}
+	.pills {
+		flex: 0 0 auto;
+	}
 }
