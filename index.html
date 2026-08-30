@@ -5,12 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>IMDb</title>
 		<link href="styles.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bookmark_add,search" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bookmark_add,search,dehaze,play_circle" />
 	</head>
 
 	<body>
 		<header>
-			<div class="navbar">
+			<!-- Desktop Navbar -->
+			<nav class="navbar">
 				<div class="logo">IMDb</div>
 
 				<button class="menu-btn">
@@ -28,7 +29,27 @@
 				<a href="#" class="watchlist-btn"><i class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20; font-size: 20px;">bookmark_add</i> Watchlist</a>
 				<a href="#" class="signin-btn">Sign In</a>
 				<button class="lang-btn">EN ▼</button>
-			</div>
+			</nav>
+
+			<!-- Mobile Navbar -->
+			<nav class="mobile-navbar">
+				<button class="menu-btn"><i class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20; font-size: 24px;">dehaze</i></button>
+
+				<div class="logo">IMDb</div>
+
+				<div class="flex-one" style="display: none;"></div>
+
+				<div class="search-container" style="margin-left: 0.5rem;">
+					<button class="search-category-btn">All <span class="arrow">▼</span></button>
+					<input type="text" placeholder="Search IMDb" />
+					<button class="search-btn"><i class="material-symbols-outlined" style="font-size: 21px;">search</i></button>
+				</div>
+				<button class="search-btn" style="display: none;"><i class="material-symbols-outlined" style="font-size: 21px; color: white">search</i></button>
+
+				<a href="#" class="signin-btn">Sign In</a>
+
+				<a href="#" class="use-app">Use app</a>
+			</nav>
 		</header>
 
 		<main>
@@ -47,7 +68,7 @@
 								<img class="poster" src="https://m.media-amazon.com/images/M/MV5BNGEwYWZkN2UtOTQ5Mi00MGQzLWEzNjYtMWMyNDBkMTkzMWNkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Poster" />
 								<div class="play-details">
 									<button class="play-btn">
-										<span class="play-icon">▶</span>
+										<span class="material-symbols-outlined" style="font-size: 4.5rem;">play_circle</span>
 									</button>
 									<div class="text-content">
 										<h2 class="trailer-title">Get a Special Look at 'Avengers: Doomsday'</h2>
@@ -57,6 +78,7 @@
 								</div>
 							</div>
 						</div>
+						<a href="#" class="browse-trailers" style="display: none; margin-left: 1rem;">Browse trailers ❯</a>
 					</div>
 
 					<aside class="hero-sidebar">

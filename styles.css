@@ -18,6 +18,7 @@ header {
 	width: 100%;
 }
 
+.mobile-navbar,
 .navbar {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -25,8 +26,9 @@ header {
 	align-items: center;
 	gap: 12px;
 	padding: 8px 16px;
-	height: 56px;
+	height: 54px;
 }
+.mobile-navbar { display: none; }
 
 .logo {
 	background-color: #f5c518;
@@ -54,6 +56,10 @@ header {
 }
 .menu-btn:hover { background-color: #252525; }
 
+.flex-one {
+	flex: 1;
+}
+
 .search-container {
 	flex: 1;
 	display: flex;
@@ -79,7 +85,7 @@ header {
 	border: none;
 	outline: none;
 	padding: 0 10px;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .search-btn {
@@ -93,14 +99,15 @@ header {
 .pro-white { color: #ffffff; }
 .pro-blue { color: #0099e6; margin-left: 1px; }
 
-.divider { width: 1px; height: 16px; background-color: #333333; }
+.divider { width: 1px; height: 1rem; background-color: #333333; }
 
+.mobile-navbar a,
 .navbar a {
 	display: flex;
 	align-items: center;
 	color: #ffffff;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 600;
 	gap: 5px;
 }
@@ -112,8 +119,29 @@ header {
 	border: none;
 	color: #ffffff;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 0.875rem;
 	cursor: pointer;
+}
+
+.use-app {
+	background-color: #f5c518;
+	color: black !important;
+	padding: 10px 9px;
+	border-radius: 10rem;
+	cursor: pointer;
+}
+
+@media (max-width: 1022px) {
+	.navbar { display: none ; }
+	.mobile-navbar { display: flex ; gap: 2px; }
+}
+
+@media (max-width: 600px) {
+	.navbar { display: none ; }
+	.mobile-navbar { display: flex ; gap: 2px; }
+	.flex-one { display: flex !important; }
+	.search-container { display: none; }
+	.search-btn { display: flex !important;}
 }
 
 /****************/
@@ -206,13 +234,9 @@ header {
 }
 
 .play-btn {
-	width: 4rem;
-	height: 4rem;
-	border-radius: 50%;
 	background: transparent;
-	border: 3px solid #ffffff;
+	border: none;
 	color: #ffffff;
-	font-size: 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -303,13 +327,14 @@ header {
 	.hero-container {
 		grid-template-columns: 1fr;
 	}
+	.hero-container .browse-trailers { display: flex !important; }
 	.hero-sidebar {
 		display: none;
 	}
 }
 
 @media (max-width: 600px) {
-	.poster { width: 5rem; }
+	.poster { width: 5.5rem; }
 	.slider-arrow { display: none; }
 	.trailer-title { font-size: 1.125rem; }
 	.play-btn { width: 3rem; height: 3rem; font-size: 1.125rem; }
